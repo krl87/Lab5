@@ -8,11 +8,22 @@
         <% for (var i = 0; i < users.length; i++) { %>
         <li class="list-group-item">
             <!--link to articles/:id-->
-            <a href="/users/<%= users[i]._id%>" title="Read More"><%= users[i].title %></a>
+            <a href="/users/<%= users[i]._id%>" title="Read More"><%= users[i].username %></a>
         </li>
         <% } %>
     </ul>
+    <table>
+        <tr>
+            <th>ID</th><th>Username</th>
+        </tr>
 
+        <% for (var i = 0; i < user.length; i++) { %>
+        <tr>
+            <td><%= user[i]._id %></td>
+            <td><%= user[i].username %></td>
+        </tr>
+        <% } %>
+    </table>
 </main>
 
 </body>
