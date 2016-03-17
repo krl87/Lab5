@@ -1,0 +1,19 @@
+<%- include ../partials/header.ejs %>
+
+<main class="container">
+    <h1>Users</h1>
+
+
+    <ul class="list-group">
+        <% for (var i = 0; i < users.length; i++) { %>
+        <li class="list-group-item">
+            <!--link to articles/:id-->
+            <a href="/users/<%= users[i]._id%>" title="Read More"><%= users[i].title %></a>
+        </li>
+        <% } %>
+    </ul>
+
+</main>
+
+</body>
+</html>
