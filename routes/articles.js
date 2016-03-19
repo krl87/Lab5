@@ -91,6 +91,7 @@ router.post('/:id', isLoggedIn, function(req, res, next) {
         }
     });
 });
+
 //get handler for delete using the article id
 router.get('/delete/:id', isLoggedIn, function(req, res, next){
     //grab the id parameter from the url
